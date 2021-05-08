@@ -1,0 +1,13 @@
+{
+  "name": "where-and-when",
+  "version": "1.0.0",
+  "description": "Hic et Nunc (H=N) Assistant",
+  "main": "index.js",
+  "author": "ir8prim8",
+  "license": "MIT",
+  "private": false,
+  "dependencies": {
+    "@airgap/beacon-sdk": "^2.2.6",
+    "tabulator-tables": "^4.9.3"
+  }
+}

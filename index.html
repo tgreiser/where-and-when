@@ -1,0 +1,40 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <title>H=N Assistant</title>
+
+    <script>
+      // This will enable the debug mode of beacon
+      // This should only be used during development
+      window.beaconSdkDebugEnabled = true
+    </script>
+
+    <link href="./node_modules/tabulator-tables/dist/css/tabulator.min.css" rel="stylesheet" />
+    <script src="./node_modules/tabulator-tables/dist/js/tabulator.min.js"></script>
+    <script src="./node_modules/@airgap/beacon-sdk/dist/walletbeacon.min.js"></script>
+  </head>
+
+  <body style="font-family: system-ui;">
+    <h2>H=N Assistant</h2>
+    <span id="account" style="display: none;">
+      Active account:
+      <span id="activeAccount"></span>
+    </span>
+    <p>This is an experimental tool created by <a href="https://twitter.com/ir8prim8" target=_blank>@ir8prim8</a>. 
+      Use at your own risk. Code available for review at: <a href="https://github.com/tgreiser/where-and-when" target=_blank>where-and-when</a>.</p>
+    <br /><br />
+    <button id="requestPermission">Connect my wallet</button>
+    <button id="cancelSwaps" style="display: none;">Cancel Selected Swaps</button>
+    <br /><br />
+    <div id="swaps"></div>
+
+    <br /><br />
+    <button id="reset">Reset and Refresh</button>
+    <br /><br />
+    Donation link: tz1cTS1WwovU7SC783xgJxZrzr151mcshmNi
+  </body>
+  <script src="index.js"></script>
+</html>
